@@ -16,6 +16,9 @@
 		849398D127D9F8BA00996C48 /* iOSUITableViewProgramaticalTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 849398D027D9F8BA00996C48 /* iOSUITableViewProgramaticalTests.swift */; };
 		849398DB27D9F8BB00996C48 /* iOSUITableViewProgramaticalUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 849398DA27D9F8BB00996C48 /* iOSUITableViewProgramaticalUITests.swift */; };
 		849398DD27D9F8BB00996C48 /* iOSUITableViewProgramaticalUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 849398DC27D9F8BB00996C48 /* iOSUITableViewProgramaticalUITestsLaunchTests.swift */; };
+		849398ED27D9FE6E00996C48 /* UserResponceModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 849398EC27D9FE6E00996C48 /* UserResponceModel.swift */; };
+		849398EF27D9FEC200996C48 /* ImageDownloadController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 849398EE27D9FEC200996C48 /* ImageDownloadController.swift */; };
+		849398F327DA006300996C48 /* UserCustomCellView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 849398F227DA006300996C48 /* UserCustomCellView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +52,9 @@
 		849398D627D9F8BB00996C48 /* iOSUITableViewProgramaticalUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = iOSUITableViewProgramaticalUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		849398DA27D9F8BB00996C48 /* iOSUITableViewProgramaticalUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = iOSUITableViewProgramaticalUITests.swift; sourceTree = "<group>"; };
 		849398DC27D9F8BB00996C48 /* iOSUITableViewProgramaticalUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = iOSUITableViewProgramaticalUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		849398EC27D9FE6E00996C48 /* UserResponceModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserResponceModel.swift; sourceTree = "<group>"; };
+		849398EE27D9FEC200996C48 /* ImageDownloadController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageDownloadController.swift; sourceTree = "<group>"; };
+		849398F227DA006300996C48 /* UserCustomCellView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserCustomCellView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -79,6 +85,9 @@
 		849398AD27D9F8B900996C48 = {
 			isa = PBXGroup;
 			children = (
+				849398E927D9FD2700996C48 /* Model */,
+				849398EB27D9FD4100996C48 /* Controller */,
+				849398EA27D9FD3900996C48 /* View */,
 				849398B827D9F8B900996C48 /* iOSUITableViewProgramatical */,
 				849398CF27D9F8BA00996C48 /* iOSUITableViewProgramaticalTests */,
 				849398D927D9F8BB00996C48 /* iOSUITableViewProgramaticalUITests */,
@@ -101,7 +110,6 @@
 			children = (
 				849398B927D9F8B900996C48 /* AppDelegate.swift */,
 				849398BB27D9F8B900996C48 /* SceneDelegate.swift */,
-				849398BD27D9F8B900996C48 /* ViewController.swift */,
 				849398BF27D9F8B900996C48 /* Main.storyboard */,
 				849398C227D9F8BA00996C48 /* Assets.xcassets */,
 				849398C427D9F8BA00996C48 /* LaunchScreen.storyboard */,
@@ -125,6 +133,31 @@
 				849398DC27D9F8BB00996C48 /* iOSUITableViewProgramaticalUITestsLaunchTests.swift */,
 			);
 			path = iOSUITableViewProgramaticalUITests;
+			sourceTree = "<group>";
+		};
+		849398E927D9FD2700996C48 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				849398EC27D9FE6E00996C48 /* UserResponceModel.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		849398EA27D9FD3900996C48 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				849398F227DA006300996C48 /* UserCustomCellView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		849398EB27D9FD4100996C48 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				849398BD27D9F8B900996C48 /* ViewController.swift */,
+				849398EE27D9FEC200996C48 /* ImageDownloadController.swift */,
+			);
+			path = Controller;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -259,7 +292,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				849398BE27D9F8B900996C48 /* ViewController.swift in Sources */,
+				849398EF27D9FEC200996C48 /* ImageDownloadController.swift in Sources */,
+				849398ED27D9FE6E00996C48 /* UserResponceModel.swift in Sources */,
 				849398BA27D9F8B900996C48 /* AppDelegate.swift in Sources */,
+				849398F327DA006300996C48 /* UserCustomCellView.swift in Sources */,
 				849398BC27D9F8B900996C48 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
