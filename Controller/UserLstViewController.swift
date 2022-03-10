@@ -38,8 +38,13 @@ class UserLstViewController: UIViewController, UITableViewDataSource, UITableVie
         guard let url = URL(string: urlString) else {return}
         
         let dataTask = session.dataTask(with: url) { data, responce, error in
+            guard let data = data else {
+                print("Empty data")
+                return
+            }
+
             do {
-                let decodedResponce = try JSONDecoder().decode(UserResponceModel.self, from: data!)
+                let decodedResponce = try JSONDecoder().decode(UserResponceModel.self, from: data)
                 
                 self.usersList = decodedResponce.data
                 DispatchQueue.main.async {
