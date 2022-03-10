@@ -7,7 +7,7 @@
 
 import UIKit
 
-class ViewController: UIViewController, UITableViewDataSource, UITableViewDelegate{
+class UserLstViewController: UIViewController, UITableViewDataSource, UITableViewDelegate{
     let tableView = UITableView()
     
     var usersList: [User] = []
@@ -35,11 +35,16 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
     func getUsers() {
         let session = URLSession.shared
         let urlString = "https://reqres.in/api/users"
-        let url = URL(string: urlString)!
+        guard let url = URL(string: urlString) else {return}
         
         let dataTask = session.dataTask(with: url) { data, responce, error in
+            guard let data = data else {
+                print("Empty data")
+                return
+            }
+
             do {
-                let decodedResponce = try JSONDecoder().decode(UserResponceModel.self, from: data!)
+                let decodedResponce = try JSONDecoder().decode(UserResponceModel.self, from: data)
                 
                 self.usersList = decodedResponce.data
                 DispatchQueue.main.async {
@@ -65,6 +70,7 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
         cell.useremailLbl.text = "\(usersList[indexPath.row].email)"
         cell.firstNameLbl.text = "\(usersList[indexPath.row].first_name)"
         cell.lastNameLbl.text = "\(usersList[indexPath.row].last_name)"
+        cell.backgroundColor = UIColor.lightGray
         return cell
     }
     
