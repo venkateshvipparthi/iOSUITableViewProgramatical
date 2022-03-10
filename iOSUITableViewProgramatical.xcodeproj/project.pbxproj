@@ -85,6 +85,7 @@
 		849398AD27D9F8B900996C48 = {
 			isa = PBXGroup;
 			children = (
+				849398F427DA1EE700996C48 /* NetworkManager */,
 				849398E927D9FD2700996C48 /* Model */,
 				849398EB27D9FD4100996C48 /* Controller */,
 				849398EA27D9FD3900996C48 /* View */,
@@ -155,9 +156,16 @@
 			isa = PBXGroup;
 			children = (
 				849398BD27D9F8B900996C48 /* UserLstViewController.swift */,
-				849398EE27D9FEC200996C48 /* ImageDownloadController.swift */,
 			);
 			path = Controller;
+			sourceTree = "<group>";
+		};
+		849398F427DA1EE700996C48 /* NetworkManager */ = {
+			isa = PBXGroup;
+			children = (
+				849398EE27D9FEC200996C48 /* ImageDownloadController.swift */,
+			);
+			path = NetworkManager;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
